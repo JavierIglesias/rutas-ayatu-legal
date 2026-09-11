@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de privacidad — Rutas Ayatu</title>
+<style>
+  :root {
+    --bg: #1b1f2a;
+    --panel: #242938;
+    --text: #eef1f8;
+    --note: #a9b1cc;
+    --accent: #5b8def;
+    --border: #454c68;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 32px 16px 64px;
+  }
+  main {
+    width: 100%;
+    max-width: 680px;
+  }
+  h1 {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: var(--note);
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-size: 18px;
+    margin-top: 32px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+  }
+  p, li {
+    color: var(--note);
+    font-size: 15px;
+  }
+  a {
+    color: var(--accent);
+  }
+  ul {
+    padding-left: 20px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-top: 16px;
+  }
+  footer {
+    margin-top: 40px;
+    font-size: 13px;
+    color: var(--note);
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad de Rutas Ayatu</h1>
+  <p class="updated">Última actualización: 12 de septiembre de 2026</p>
+
+  <p>
+    Esta política de privacidad se aplica a la aplicación <strong>Rutas Ayatu</strong> para
+    Android, desarrollada por Javier Iglesias como proyecto personal.
+  </p>
+
+  <div class="card">
+    <strong>Resumen:</strong> Rutas Ayatu no tiene servidores propios. Tu ubicación, tus rutas,
+    tus fotos y tus vídeos se guardan únicamente en tu dispositivo. Lo único que sale de tu
+    móvil son peticiones anónimas a proveedores de mapas para poder dibujar el mapa en pantalla.
+  </div>
+
+  <h2>Ubicación (GPS)</h2>
+  <p>La aplicación solicita permiso de ubicación precisa para grabar el track GPS de tu
+    actividad (senderismo, bici, running...) mientras la grabación está en marcha, incluida la
+    grabación en segundo plano mientras el servicio de grabación sigue activo (verás siempre una
+    notificación fija «grabando actividad» mientras esto ocurre). Esa ubicación:</p>
+  <ul>
+    <li>Se guarda solo en la base de datos local del teléfono (nunca en un servidor).</li>
+    <li>No se comparte con el desarrollador ni con terceros.</li>
+    <li>Solo sale de tu dispositivo, de forma anónima y sin identificarte, como parte de las
+      peticiones de teselas de mapa necesarias para dibujar el mapa (ver más abajo).</li>
+  </ul>
+
+  <h2>Cámara y fotos/vídeos</h2>
+  <p>Puedes añadir fotos o vídeos durante una grabación; se toman con la cámara del sistema y se
+    guardan en el almacenamiento privado de la app, geolocalizados con el punto GPS del momento.
+    Nunca se suben a ningún servidor ni se comparten salvo que tú mismo elijas exportar o
+    compartir una ruta.</p>
+
+  <h2>Mapas: proveedores de teselas</h2>
+  <p>Para dibujar el mapa, la aplicación descarga «teselas» (imágenes de pequeñas porciones del
+    mapa) de estos proveedores externos, según el estilo de mapa que elijas:</p>
+  <ul>
+    <li><a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> (mapa
+      estándar, sin necesidad de clave ni cuenta)</li>
+    <li><a href="https://www.maptiler.com/privacy-policy/" target="_blank" rel="noopener">MapTiler</a>
+      (mapa satélite, solo si introduces tu propia clave en Ajustes)</li>
+    <li><a href="https://www.esri.com/en-us/privacy/overview" target="_blank" rel="noopener">Esri /
+      ArcGIS</a> (mapa satélite de reserva si no hay clave de MapTiler)</li>
+  </ul>
+  <p>Estas peticiones solo incluyen las coordenadas de la zona del mapa que se está mostrando en
+    ese momento (imprescindible para pedir las teselas correctas), no tu identidad, ni tu ruta
+    completa, ni tus fotos. Estas peticiones se rigen por la política de privacidad de cada
+    proveedor, enlazada arriba.</p>
+
+  <h2>Reloj (Wear OS)</h2>
+  <p>Si usas la app junto con la app para reloj Wear OS, la comunicación entre el teléfono y el
+    reloj (empezar/pausar/parar la grabación, estadísticas en vivo) viaja directamente entre tus
+    dos dispositivos emparejados a través de los servicios de Google Play para Wear OS
+    («Wearable Data Layer»), sin pasar por ningún servidor de Rutas Ayatu.</p>
+
+  <h2>Datos personales</h2>
+  <p>La aplicación no requiere registro ni cuenta de usuario, no solicita tu nombre ni tu correo
+    electrónico, no utiliza identificadores de publicidad y no incluye ninguna herramienta de
+    analítica o seguimiento de terceros.</p>
+
+  <h2>Compartir una ruta</h2>
+  <p>Si usas la opción «Compartir GPX» o «Compartir vídeo», el archivo se envía a la app que tú
+    elijas en el selector del sistema (correo, mensajería, etc.). Esa elección y ese envío los
+    controlas tú en cada momento; la aplicación no comparte nada por su cuenta.</p>
+
+  <h2>Permisos y publicidad</h2>
+  <p>La aplicación no muestra anuncios y no incluye compras dentro de la app. Los permisos que
+    solicita (ubicación, cámara, notificaciones) se usan exclusivamente para las funciones
+    descritas arriba.</p>
+
+  <h2>Menores de edad</h2>
+  <p>Rutas Ayatu es una aplicación de propósito general (registro de actividades al aire libre),
+    no dirigida específicamente a menores.</p>
+
+  <h2>Cambios en esta política</h2>
+  <p>Si esta política cambia en el futuro, se actualizará esta misma página con una nueva fecha
+    de actualización.</p>
+
+  <h2>Contacto</h2>
+  <p>Para cualquier duda sobre esta política de privacidad, puedes escribir a
+    <a href="mailto:javier.iglesias10@gmail.com">javier.iglesias10@gmail.com</a>.</p>
+
+  <footer>Rutas Ayatu — Javier Iglesias</footer>
+</main>
+</body>
+</html>
